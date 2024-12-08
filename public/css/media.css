@@ -40,13 +40,16 @@
         margin-left: 5%;
       }
       .thirdL {
-        margin-left: 70%;
+        margin-left: 70%;   
       }
       .th2{
-        width: 200px;
         border-radius: 10px;
         }
-   .th2:nth-child(1), .th2:nth-child(3) {
+        .th2:nth-child(2) {
+          width: 90px;
+        }
+        .th2:nth-child(1), .th2:nth-child(3) {
+          width: 200px;
           box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.732);
         }
         .secondL {
