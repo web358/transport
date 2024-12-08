@@ -5,7 +5,7 @@
 
 body {
   background: linear-gradient(to bottom, dodgerblue, rgb(141, 185, 230), #e6f793, #e1e8be, #eaeff1);
-margin-bottom: 65%;
+margin-bottom: 68%;
 }
 
   .navImg2 {
@@ -55,7 +55,7 @@ margin-bottom: 65%;
   margin-top: -10%;
 }
 footer {
-  margin-top: 35%;
+  margin-top: 20%;
   margin-left: 10%;
   color: rgb(35, 93, 168);
 }
@@ -156,8 +156,8 @@ h1,h2 {
 }
 
 .th2{
-width: 100px;
-margin-left: 30%;
+width: 90px;
+margin-left: 40%;
 }
 .secondL {
   margin-top: -20%;
