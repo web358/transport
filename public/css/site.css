@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom, dodgerblue, rgb(141, 185, 230), #e1e8be, #eaeff1);
+margin-bottom: 65%;
+}
+
+  .navImg2 {
+    position: absolute;
+    margin-top: -50%;
+    width: 100px;
+  }
+
+.navigation {
+  /* position: absolute; */
+  /* background: linear-gradient(to bottom, dodgerblue, rgb(141, 185, 230), #e1e8be, #eaeff1); */
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  animation: 2s ease-out 0s 1 slideInFromRight;
+}
+@keyframes slideInFromRight {
+	0% {
+	  transform: translateX(100%);
+	}
+	100% {
+	  transform: translateX(0);
+	}
+  }
+.navigation li {
+  position: absolute;
+  list-style: none;
+  width: 30px;
+  color: white;
+  margin-left: 65%;
+  margin-top: 10%;
+  font-size: 20px;
+  text-shadow:  0.8px 1.2px 0.8px rgb(11, 11, 32);
+  cursor: pointer;
+}
+.navigation li:nth-child(2) {
+  margin-left: 10%;
+}
+.navigation li:nth-child(3) {
+  margin-left: 35%; 
+}
+.navImg {
+  position: absolute;
+  height: 100px;
+}
+.firstS {
+  margin-top: -10%;
+}
+footer {
+  margin-top: 35%;
+  margin-left: 10%;
+  color: rgb(35, 93, 168);
+}
+
+.overlay { 
+  position: relative;  
+  width: 100%;
+  height: 0;
+  position: fixed; 
+  left: 0;
+  top: 0;
+  margin-top: 29%;
+  background: #1f3d4738;
+	backdrop-filter: blur(5px);
+  z-index: 1;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  /* display: block;  */
+  transition: 0.3s; 
+}
+.overlay a:nth-child(1) {
+ margin-top: -10%;
+}
+.overlay a div{
+ margin-left: 12%;
+ width: 240px;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: rgb(253, 244, 189);
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+}
+
+.overlay-content a {
+  display: none;
+}
+
+.last {
+  display: inline-block;
+  margin-top: 30%; 
+}
+.firstL, .thirdL {
+  display: none;
+}
+
+h1,h2 {
+  z-index: -1;
+  margin-left: 15%;
+  color: rgb(35, 93, 168);
+  text-shadow:  0.8px 1.2px 0.8px rgb(11, 11, 32);
+  animation: an 5s infinite;
+}
+
+.th2 {
+  animation: an2 5s infinite;
+  }
+  
+	  @keyframes an {
+		  from {
+			  opacity: 0;
+			  transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+		  }
+		  to {
+			  opacity: 1;
+			  transform: perspective(500px) translate3d(0, 0, 0);
+		  }
+  }
+  @keyframes an2 {
+    from {
+      opacity: 0;
+      transform: perspective(500px) translate3d(35px, 40px, 150px) rotate3d(1, -1, 0, 35deg);
+    }
+    to {
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+    }
+}
+
+.th2{
+width: 100px;
+margin-left: 30%;
+}
+.secondL {
+  margin-top: -20%;
+  margin-left: -15%;
+}
